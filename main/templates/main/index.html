@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Главная - Юлия Денисова
+{% endblock %}
+
+
+{% block  isActiveHome %}
+active
+{% endblock %}
+
+
+{% block content %}
+    <div class="row pt-3">
+        <div class="col-md" style="max-width: 530px;">
+            <figure class="figure">
+                <img src="{% static 'img/myphoto.jpg' %}" class="figure-img img-fluid rounded" alt="...">
+            </figure>
+        </div>
+
+        <div class="col-md-1"></div>
+
+        <div class="col-md pt-5">
+            <div class="container">
+                <h1 style="font-family: 'Roboto', 'Helvetica Nue', sans-serif;
+                                    font-size: xxx-large; color: #efb430;"><b>ПРИВЕТ,</b></h1>
+                <p class="lead">
+                    Меня зовут Юлия Денисова, <br>
+                    я Python Developer <br>
+                    из Красноярска, Россия. <br>
+                    Я разрабатываю сайты и чат боты, <br>
+                    создаю и обучаю ML модели.
+                </p>
+                <br>
+                <p class="lead">
+                    <a href="#" target="_blank" class="btn btn-light">
+                        <img src="{% static 'img/github.svg' %}" alt="..." height="25em" width="25em">
+                        GitHub
+                    </a>
+                    &nbsp;
+                    <a href="#" target="_blank" class="btn btn-light">
+                        <img src="{% static 'img/telegram.svg' %}" alt="..." height="25em" width="25em">
+                        Telegram
+                    </a>
+                </p>
+                <br>
+                <p class="lead">
+                    <a href="#" class="btn btn-lg btn-outline-warning">Скачать резюме</a>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
